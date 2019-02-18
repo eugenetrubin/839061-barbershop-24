@@ -66,10 +66,11 @@
       <section class="gallery">
         <h2>Фотогалерея</h2>
         <figure class="gallery-content">
-          <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
+          <a href="#">
+          <img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
         </figure>
-        <span class="button gallery-button gallery-button-back">Назад</span>
-        <span class="button gallery-button gallery-button-next">Вперед</span>
+        <button class="button gallery-button gallery-button-back">Назад</button>
+        <button class="button gallery-button gallery-button-next">Вперед</button>
       </section>
       
        <section class="contacts">
@@ -91,7 +92,12 @@
       <section class="appointment">
         <h2>Записаться</h2>
         <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <!-- Здесь будет форма -->
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <input type="text" name="date" value="" placeholder="08.10.2017">
+          <input type="text" name="time" value="" placeholder="10:00">
+          <input type="text" name="name" value="" placeholder="Борода">
+          <input type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+        </form>
       </section>
     </main>
     <footer class="main-footer">
